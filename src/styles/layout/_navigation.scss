@@ -1,0 +1,50 @@
+.navigation__list-item {
+  list-style-type: none;
+  display: block;
+  float: left;
+
+  &--mobile-hidden {
+    @media (max-width: 62em) {
+      display: none;
+    }
+  }
+
+  &--menu {
+    float: right;
+    margin-top: -0.25;
+  }
+  &:hover {
+    color: red;
+  }
+}
+
+.navigation__list-item-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0.25rem 0.25rem 0.25rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: block;
+  text-shadow: 0 0 0.5rem black;
+  font-size: 1.25rem;
+
+  &:hover {
+    border-bottom: 0.2rem solid blue;
+  }
+}
+
+.navigation__list-item-logo {
+  width: 4rem;
+  height: 4rem;
+  margin-top: -1.5rem;
+  fill: red;
+}
+
+.navigation__list-item-link--logo:hover {
+  border-bottom: none;
+  vertical-align: middle;
+}
+.navigation__list-item-link--logo:hover .navigation__list-item-logo {
+  fill: black;
+}
