@@ -27,10 +27,28 @@
 .motivation__column-images {
   float: left;
   width: 66.6%;
+  position: relative;
 }
 
 .motivation-image {
-  width: 50%;
+  width: 75%;
   position: absolute;
   //margin-left: 25%;
+
+  &--first {
+    left: 4rem;
+    width: 50%;
+  }
+
+  &--second {
+    right: 0;
+    width: 50%;
+  }
+
+  &--third {
+    right: 1rem;
+    width: 50%;
+    z-index: 2;
+    top: 10rem;
+  }
 }

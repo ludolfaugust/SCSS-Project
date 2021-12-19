@@ -195,11 +195,26 @@ html {
 .motivation__column-images {
   float: left;
   width: 66.6%;
+  position: relative;
 }
 
 .motivation-image {
-  width: 50%;
+  width: 75%;
   position: absolute;
+}
+.motivation-image--first {
+  left: 4rem;
+  width: 50%;
+}
+.motivation-image--second {
+  right: 0;
+  width: 50%;
+}
+.motivation-image--third {
+  right: 1rem;
+  width: 50%;
+  z-index: 2;
+  top: 10rem;
 }
 
 /** Breakpoints */
