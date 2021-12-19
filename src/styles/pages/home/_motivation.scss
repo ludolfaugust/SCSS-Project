@@ -1,2 +1,36 @@
+.motivation {
+  margin-top: 2rem;
+  color: rgb(47, 47, 47);
+}
 
+.motivation__text-heading {
+  color: rgb(85, 84, 84);
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 
+  &::before {
+    content: "";
+    width: 3rem;
+    height: 0.25rem;
+    display: block;
+    background-color: rgb(47, 47, 47);
+    margin-bottom: 0.5rem;
+  }
+}
+
+.motivation__column-text {
+  float: left;
+  width: 33.3%;
+}
+
+.motivation__column-images {
+  float: left;
+  width: 66.6%;
+}
+
+.motivation-image {
+  width: 50%;
+  position: absolute;
+  //margin-left: 25%;
+}

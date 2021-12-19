@@ -8,8 +8,9 @@
   vertical-align: middle;
   overflow: hidden;
   position: relative;
-  @media (max-width: 75em) {
-    height: calc(18rem + 32vw);
+
+  @media (max-width: 36em) {
+    background-size: cover;
   }
 }
 

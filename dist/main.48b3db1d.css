@@ -26,6 +26,7 @@ html {
 .container {
   width: 75rem;
   margin: 0px auto;
+  padding: 0 2rem;
 }
 
 @media (max-width: 62em) {
@@ -40,8 +41,7 @@ html {
 }
 .header {
   height: 40rem;
-  background-image: linear-gradient(-5.71deg, white 49.9%, transparent 50.1%),
-    url("/Header.b717eb1a.jpg");
+  background-image: linear-gradient(-5.71deg, white 49.9%, transparent 50.1%), url("/Header.b717eb1a.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center 100%, center center;
   background-size: 100vw 10vw, cover;
@@ -49,9 +49,9 @@ html {
   overflow: hidden;
   position: relative;
 }
-@media (max-width: 75em) {
+@media (max-width: 36em) {
   .header {
-    height: calc(18rem + 32vw);
+    background-size: cover;
   }
 }
 
@@ -153,6 +153,8 @@ html {
   width: 4rem;
   height: 4rem;
   margin-top: -1.5rem;
+  margin-left: 0rem;
+  padding-left: 0rem;
   fill: red;
 }
 
@@ -163,6 +165,41 @@ html {
 
 .navigation__list-item-link--logo:hover .navigation__list-item-logo {
   fill: black;
+}
+
+.motivation {
+  margin-top: 2rem;
+  color: #2f2f2f;
+}
+
+.motivation__text-heading {
+  color: #555454;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.motivation__text-heading::before {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  display: block;
+  background-color: #2f2f2f;
+  margin-bottom: 0.5rem;
+}
+
+.motivation__column-text {
+  float: left;
+  width: 33.3%;
+}
+
+.motivation__column-images {
+  float: left;
+  width: 66.6%;
+}
+
+.motivation-image {
+  width: 50%;
+  position: absolute;
 }
 
 /** Breakpoints */
