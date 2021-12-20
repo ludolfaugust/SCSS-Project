@@ -172,10 +172,15 @@ html {
   color: #2f2f2f;
 }
 
+.motivation__column-text {
+  float: left;
+  width: 33.3%;
+}
+
 .motivation__text-heading {
   color: #555454;
   font-weight: 500;
-  margin-top: 1rem;
+  margin-top: 4rem;
   margin-bottom: 0.5rem;
 }
 .motivation__text-heading::before {
@@ -187,11 +192,6 @@ html {
   margin-bottom: 0.5rem;
 }
 
-.motivation__column-text {
-  float: left;
-  width: 33.3%;
-}
-
 .motivation__column-images {
   float: left;
   width: 66.6%;
@@ -199,22 +199,31 @@ html {
 }
 
 .motivation-image {
-  width: 75%;
+  max-width: 75%;
   position: absolute;
+  box-shadow: 0 0 1rem black;
+  box-sizing: content-box;
 }
 .motivation-image--first {
-  left: 4rem;
-  width: 50%;
+  left: 40%;
+  width: 40.3%;
+  z-index: 2;
+  top: 7rem;
+  box-shadow: 0 0 2rem black;
 }
 .motivation-image--second {
-  right: 0;
-  width: 50%;
+  right: 30%;
+  width: 60%;
 }
 .motivation-image--third {
-  right: 1rem;
-  width: 50%;
-  z-index: 2;
-  top: 10rem;
+  right: 0;
+  width: 45.3%;
+  right: 50%;
+  top: 15rem;
+  z-index: 1;
+}
+.motivation-image:hover {
+  border: white solid;
 }
 
 /** Breakpoints */
