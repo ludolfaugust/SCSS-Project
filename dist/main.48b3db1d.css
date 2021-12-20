@@ -203,6 +203,7 @@ html {
   position: absolute;
   box-shadow: 0 0 1rem black;
   box-sizing: content-box;
+  border-radius: 5%;
 }
 .motivation-image--first {
   left: 50%;
