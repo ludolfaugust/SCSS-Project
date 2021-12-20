@@ -41,6 +41,9 @@
   margin-left: 0rem;
   padding-left: 0rem;
   fill: red;
+  &:hover {
+    transform: rotate(45deg);
+  }
 }
 
 .navigation__list-item-link--logo:hover {
